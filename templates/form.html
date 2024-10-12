@@ -1,0 +1,16 @@
+{% extends '__base.html' %}
+
+{% block content %}
+    <h2>Форма бронювання:</h2>
+    <form action="" method="post">
+        <table>
+            {% for field in form %}
+            <tr>
+                <th>{{ field.label }}</th>
+                <td>{{ field }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <button type="submit">Бронювати</button>
+    </form>
+{% endblock %}
